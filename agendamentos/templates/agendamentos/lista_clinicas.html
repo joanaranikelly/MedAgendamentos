@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clínicas Cadastradas</title>
+</head>
+<body>
+    <h1>Clínicas Cadastradas</h1>
+    <ul>
+        {% for clinica in clinicas %}
+            <li>{{ clinica.nome }} - {{ clinica.endereco }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
